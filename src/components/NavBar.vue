@@ -3,19 +3,19 @@
   <div class="container">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item ">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#">API</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#">Water point</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Portfolio</a>
+          <a class="nav-link" href="#">GitHub</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Services</a>
+          <a class="nav-link" href="#">Contact Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#">Support Us </a>
         </li>
       </ul>
     </div>
@@ -27,30 +27,32 @@
 
 </script>
 <style scoped>
-    li, a{
+
+  .navbar-nav li, .navbar-nav a{
         list-style: none;
         text-decoration: none;
-        color: black;
+        color: white;
         padding: 5px
     }
-    ul {
+    .navbar-nav {
     display: flex;
     align-content: center;
     justify-content: space-around;
     }
     nav{
         padding: 10px;
-        background-color: white;
+        background-color: #26272b;
         position: fixed;
         width: 100%;
         top : 0;
+        font-family: Avenir, Helvetica, Arial, sans-serif;
         
     }
 
-a {
+.navbar-nav a {
   position: relative;
 }
-a::after {
+.navbar-nav a::after {
   content: '';
   transform-origin: 0 0; 
   transform: scaleX(0);
@@ -59,12 +61,12 @@ a::after {
   left: 0;
   right: 0;
   height: .1em; 
-  background: black;
+  background: white;
   z-index: -1;
   opacity: 0.8;
   transition: transform .3s;
 }
-a:hover::after {
+.navbar-nav a:hover::after {
   transform: scaleX(1);
 }
 </style>
