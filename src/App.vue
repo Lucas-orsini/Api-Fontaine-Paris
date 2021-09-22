@@ -3,6 +3,7 @@
   <div id="app">
     <Main></Main>
   </div>
+  <Footer></Footer>
 </template>
 
 <script>
@@ -10,12 +11,14 @@
 
 
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 import Main from './components/Main'
 
 export default {
   name: "App",
   components:{
     NavBar,
+    Footer
     Main,
   },
 
