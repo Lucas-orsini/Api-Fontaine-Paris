@@ -43,6 +43,12 @@
   </footer>
 </template>
 <style>
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .site-footer {
   background-color: #26272b;
   padding: 45px 0 20px;
@@ -128,4 +134,5 @@
 .row div{
   margin-right: 35px;
 }
+
 </style>

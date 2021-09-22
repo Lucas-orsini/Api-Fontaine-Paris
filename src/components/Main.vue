@@ -44,6 +44,7 @@ export default {
 </script>
 
 <style scoped>
+
   .container{
     display: flex;
     flex-wrap: wrap;
@@ -61,5 +62,8 @@ export default {
   .flex{
     display: flex;
     justify-content: center;
+  }
+  .container{
+    margin-top: 150px;
   }
 </style>
