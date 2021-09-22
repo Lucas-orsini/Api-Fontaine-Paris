@@ -3,15 +3,18 @@
   <div id="app">
     {{data}}
   </div>
+  <Footer></Footer>
 </template>
 
 <script>
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 
 export default {
   name: "App",
   components:{
-    NavBar
+    NavBar,
+    Footer
   },
   data() {
     return {
