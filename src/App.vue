@@ -1,36 +1,27 @@
 <template>
   <NavBar></NavBar>
   <div id="app">
-    {{data}}
+    <Main></Main>
   </div>
   <Footer></Footer>
 </template>
 
 <script>
+
+
+
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
+import Main from './components/Main'
 
 export default {
   name: "App",
   components:{
     NavBar,
     Footer
+    Main,
   },
-  data() {
-    return {
-      data: {}
-    }
-  },
-  beforeMount(){
-    this.getName();
-  },
-  methods: {
-    async getName(){
-      const res = await fetch('https://opendata.paris.fr/api/records/1.0/search/?dataset=fontaines-a-boire&q=&facet=type_objet&facet=modele&facet=commune&facet=dispo');
-      const data = await res.json();
-      this.data = data;
-    }
-  }
+
 };
 </script>
 
