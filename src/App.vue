@@ -18,8 +18,8 @@ export default {
   name: "App",
   components:{
     NavBar,
-    Footer
-    Main,
+    Footer,
+    Main
   },
 
 };
